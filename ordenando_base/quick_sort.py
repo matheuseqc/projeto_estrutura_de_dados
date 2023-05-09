@@ -15,6 +15,7 @@ def partition(data, low, high):
 def quicksort(data, low, high):
     if low < high:
         pi = partition(data, low, high)
+        #sublista
         quicksort(data, low, pi - 1)
         quicksort(data, pi + 1, high)
 
