@@ -42,7 +42,7 @@ sorted_data = [row[1] for row in data]
 
 
 # Escrevendo o resultado em um novo arquivo CSV
-with open("ordenando_base/radixSort_data.csv", "w", newline='') as file:
+with open("ordenando_base/radixSort.csv", "w", newline='') as file:
     csv_writer = csv.writer(file)
     csv_writer.writerow(header)
     csv_writer.writerows(sorted_data)
