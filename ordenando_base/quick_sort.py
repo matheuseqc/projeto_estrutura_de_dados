@@ -8,6 +8,7 @@ def partition(data, low, high):
         if data[j][0] <= pivot[0]:
             i += 1
             data[i], data[j] = data[j], data[i]
+    #pivot no meio
     data[i + 1], data[high] = data[high], data[i + 1]
     return i + 1
 
